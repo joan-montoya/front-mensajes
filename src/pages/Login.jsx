@@ -92,3 +92,74 @@ export default function Login() {
         </>
       );
     }
+
+    const FormContainer = styled.div`
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 1rem;
+    align-items: center;
+    background-color: #76D7C4;
+    .brand {
+      display: flex;
+      align-items: center;
+      gap: 1rem;
+      justify-content: center;
+      img {
+        height: 5rem;
+      }
+      h1 {
+        color: white;
+        text-transform: uppercase;
+      }
+    }
+  
+    form {
+      display: flex;
+      flex-direction: column;
+      gap: 2rem;
+      background-color: #17A589 ;
+      border-radius: 1rem;
+      padding: 5rem;
+      width: 60vw;
+    }
+    input {
+      background-color: transparent;
+      padding: 1rem;
+      border: 0.1rem solid #00000;
+      border-radius: 0.4rem;
+      color: white;
+      width: 100%;
+      font-size: 1rem;
+      &:focus {
+        border: 0.2rem solid #283747;
+        outline: none;
+      }
+    }
+    button {
+      background-color: #148F77;
+      color: white;
+      padding: 1rem 2rem;
+      border: none;
+      font-weight: bold;
+      cursor: pointer;
+      border-radius: 0.4rem;
+      font-size: 1rem;
+      text-transform: uppercase;
+      &:hover {
+        background-color: #283747;
+      }
+    }
+    span {
+      color: white;
+      text-transform: uppercase;
+      a {
+        color: #283747;
+        text-decoration: none;
+        font-weight: bold;
+      }
+    }
+  `;
+  
