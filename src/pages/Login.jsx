@@ -60,6 +60,35 @@ export default function Login() {
         }
       }
     };
-return(<>
-</>)
-}  
+
+    return (
+        <>
+          <FormContainer>
+            <form action="" onSubmit={(event) => handleSubmit(event)}>
+              <div className="brand">
+                <img src={Who} alt="logo" />
+                <h1>WhatsOpp</h1>
+              </div>
+              <input
+                type="text"
+                placeholder="Usuario"
+                name="username"
+                onChange={(e) => handleChange(e)}
+                min="3"
+              />
+              <input
+                type="password"
+                placeholder="Contraseña"
+                name="password"
+                onChange={(e) => handleChange(e)}
+              />
+              <button type="submit">Ingresar</button>
+              <span>
+                ¿ No tienes cuenta ? <Link to="/register">Crear una.</Link>
+              </span>
+            </form>
+          </FormContainer>
+          <ToastContainer />
+        </>
+      );
+    }
