@@ -1,0 +1,52 @@
+button {
+    background-color: #4da0ee;
+    color: white;
+    padding: 1rem 2rem;
+    border: none;
+    font-weight: bold;
+    cursor: pointer;
+    border-radius: 0.4rem;
+    font-size: 1rem;
+    text-transform: uppercase;
+    
+  }
+  button:hover {
+    background-color: #283747;
+  }
+  input {
+    background-color: transparent;
+    padding: 1rem;
+    
+  }
+  input:focus {
+    border: 0.2rem solid #283747;
+    outline: none;
+  }
+
+  form {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    border-radius: 1rem;
+    padding: 5rem;
+    width: 40vw;
+  }
+  .brand {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    justify-content: center;
+    
+  }
+  img {
+      height: 5rem;
+    }
+    h1 {
+      color: black;
+      text-transform: uppercase;
+    }
+
+    .cont{
+        position: relative;
+        left: 29%;
+    }
